@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/bin/node /snap/node/7588/bin/yarn.js add webpack@^5.40.0 webpack-cli@^4.7.2 babel-loader@^8.2.2 babel-core@^6.26.3 babel-preset-env@^1.7.0
+
+PATH: 
+  /run/user/1001/fnm_multishells/32404_1687370684605/bin:/home/vika/.local/share/fnm:/home/vika/.local/bin:/home/vika/bin:/run/user/1001/fnm_multishells/18632_1687355701237/bin:/home/vika/.local/share/fnm:/home/vika/.local/bin:/home/vika/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://npm.pkg.github.com/joynie12/webpack: Permission denied
+      at params.callback [as _callback] (/snap/node/7588/lib/cli.js:66145:18)
+      at self.callback (/snap/node/7588/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/snap/node/7588/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/snap/node/7588/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "events",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Joynie12/events.git",
+    "author": "Joynie12 <bigw199412@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "build": "webpack --mode production"
+    },
+    "dependencies": {
+      "webpack": "^5.40.0",
+      "webpack-cli": "^4.7.2",
+      "babel-loader": "^8.2.2",
+      "babel-core": "^6.26.3",
+      "babel-preset-env": "^1.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

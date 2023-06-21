@@ -1,0 +1,18 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Joynie12/events.git",
+  "author": "Joynie12 <bigw199412@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "babel-loader": "^8.2.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}
