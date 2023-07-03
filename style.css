@@ -27,7 +27,7 @@ h1 {
 .goblin {
   width: 80px;
   height: 80px;
-  background-image: url('../images/goblin.png');
+  background-image: url('./src/character.png');
   background-size: cover;
   cursor: pointer;
 }

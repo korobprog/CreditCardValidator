@@ -17,3 +17,41 @@ scoreboard.setGame(game);
 cursor.setGame(game);
 
 game.start();
+
+const gameBoard = document.getElementById('game-board');
+gameBoard.addEventListener('click', (event) => {
+  if (event.target.classList.contains('goblin')) {
+    game.handleClick();
+  }
+});
+
+function moveCharacter() {
+  const oldCharacters = document.querySelectorAll('.character');
+  oldCharacters.forEach((character) => {
+    character.parentElement.removeChild(character);
+  });
+
+  const randomIndex = game.getRandomIndex();
+  const cell = document.getElementById(`cell-${randomIndex}`);
+  const characterElement = document.createElement('img');
+  characterElement.src = require('./character.png').default;
+  characterElement.classList.add('character');
+  cell.appendChild(characterElement);
+}
+
+// Удаляем все ячейки из поля
+gameBoard.innerHTML = '';
+
+// Создаем ячейки для квадратного поля 4 на 4
+for (let i = 0; i < 16; i++) {
+  const cell = document.createElement('div');
+  cell.classList.add('cell');
+  cell.id = `cell-${i}`;
+  gameBoard.appendChild(cell);
+}
+
+moveCharacter();
+setInterval(moveCharacter, 2000);
+setTimeout(() => {
+  moveCharacter();
+}, 1000);
