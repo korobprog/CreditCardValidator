@@ -44,7 +44,7 @@ module.exports = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: 'index.html',
     }),
   ],  
 };

@@ -39,10 +39,8 @@ function moveCharacter() {
   cell.appendChild(characterElement);
 }
 
-// Удаляем все ячейки из поля
 gameBoard.innerHTML = '';
 
-// Создаем ячейки для квадратного поля 4 на 4
 for (let i = 0; i < 16; i++) {
   const cell = document.createElement('div');
   cell.classList.add('cell');
