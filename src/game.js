@@ -4,7 +4,6 @@ class Game {
       this.missedGoblins = 0;
       this.goblinInterval = null;
   
-      // Получаем DOM-элементы, связанные с игрой
       this.scoreboardElement = document.getElementById('scoreboard');
       this.missedElement = document.getElementById('missed');
       this.startButton = document.getElementById('start-button');

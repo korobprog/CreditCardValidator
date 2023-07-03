@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /snap/node/7588/bin/yarn.js add webpack@^5.40.0 webpack-cli@^4.7.2 babel-loader@^8.2.2 babel-core@^6.26.3 babel-preset-env@^1.7.0
+  /usr/bin/node /snap/node/7588/bin/yarn.js add webpack@^ webpack-cli@^ babel-loader@ babel-core@^ babel-preset-env@
 
 PATH: 
-  /run/user/1001/fnm_multishells/32404_1687370684605/bin:/home/vika/.local/share/fnm:/home/vika/.local/bin:/home/vika/bin:/run/user/1001/fnm_multishells/18632_1687355701237/bin:/home/vika/.local/share/fnm:/home/vika/.local/bin:/home/vika/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+  /run/user/1001/fnm_multishells/61505_1688404573272/bin:/home/vika/.local/share/fnm:/home/vika/.local/bin:/home/vika/bin:/run/user/1001/fnm_multishells/61123_1688404562144/bin:/home/vika/.local/share/fnm:/home/vika/.local/bin:/home/vika/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 
 Yarn version: 
   1.22.19
