@@ -9,13 +9,15 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "babel-core": "^7.0.0-bridge.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^9.1.2",
     "babel-preset-env": "^1.7.0",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
