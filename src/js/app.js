@@ -1,56 +1,7 @@
-import Game from './game.js';
-import Goblin from './goblin.js';
-import Scoreboard from './scoreboard.js';
-import Cursor from './cursor.js';
-import Character from '../assets/character.png'
+import GamePlay from './GamePlay';
+import GameController from './GameController';
 
-const game = new Game();
-const goblin = new Goblin();
-const scoreboard = new Scoreboard();
-const cursor = new Cursor();
+const gamePlay = new GamePlay();
+const gameCtrl = new GameController(gamePlay);
 
-game.setGoblin(goblin);
-game.setScoreboard(scoreboard);
-game.setCursor(cursor);
-
-goblin.setGame(game);
-scoreboard.setGame(game);
-cursor.setGame(game);
-
-game.start();
-
-const gameBoard = document.getElementById('game-board');
-gameBoard.addEventListener('click', (event) => {
-  if (event.target.classList.contains('goblin')) {
-    game.handleClick();
-  }
-});
-
-function moveCharacter() {
-  const oldCharacters = document.querySelectorAll('.character');
-  oldCharacters.forEach((character) => {
-    character.parentElement.removeChild(character);
-  });
-
-  const randomIndex = game.getRandomIndex();
-  const cell = document.getElementById(`cell-${randomIndex}`);
-  const characterElement = document.createElement('img');
-  characterElement.src = Character;
-  characterElement.classList.add('character');
-  cell.appendChild(characterElement);
-}
-
-gameBoard.innerHTML = '';
-
-for (let i = 0; i < 16; i++) {
-  const cell = document.createElement('div');
-  cell.classList.add('cell');
-  cell.id = `cell-${i}`;
-  gameBoard.appendChild(cell);
-}
-
-moveCharacter();
-setInterval(moveCharacter, 2000);
-setTimeout(() => {
-  moveCharacter();
-}, 1000);
+gameCtrl.init();
