@@ -1,93 +1,82 @@
+h1,
+h2 {
+  text-align: center;
+}
+
 body {
-  font-family: sans-serif;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-.menu {
-  text-align: center;
-  font-size: 20px;
-}
-
-.start {
-  font-size: inherit;
-  padding: 5px 30px;
-  border-radius: 30px;
-}
-
-.start:focus {
-  outline: none;
-}
-
-.start:hover {
-  cursor: pointer;
-  outline: none;
-  background-color: red;
-}
-
-.start:active {
-  background-color: red;
-  box-shadow: 0 0 3pt 2pt red;
-}
-
-.menu span {
-  font-size: 120%;
-  font-weight: bold;
-}
-
-.hits {
-  color: green;
-}
-
-.skip {
-  color: red;
-}
-
-.game-board {
-  position: relative;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  width: 50vmin;
-  height: 50vmin;
-  box-sizing: border-box;
-  border: 1px solid black;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
-.game-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+button {
+  border: none;
+  cursor: pointer;
+}
 
-  background-color: lightgray;
-  padding: 5px 30px;
-  border: 2px solid black;
+button:hover {
+  opacity: 0.8;
+}
+
+input {
+  color: rgb(80, 78, 78);
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  width:100%;
+  padding: 3px;
+  border:1px solid black;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input:focus {
+  outline: 3px solid rgb(140, 139, 139);
+}
+
+input::placeholder {
+  color: rgba(9, 0, 0, 0.6);
+}
+
+/* Button on top of the Input */
+.wrapper {
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.wrapper input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgb(161, 152, 152);
   border-radius: 10px;
-
-  font-size: 200%;
-  font-weight: bold;
-
+  padding: 1rem 2rem;
+  width: 100%;
 }
 
-.cell {
-  width: 25%;
-  height: 25%;
-  box-sizing: border-box;
-  border: 1px solid black;
+@media only screen and (min-width: 700px) {
+  .wrapper button {
+    background: rgb(46, 249, 0);
+    border-radius: 10px;
+    aspect-ratio: 2;
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    right: -120px;
+  }
 }
 
-.goblin {
-  width: 100%
-}
-
-.custom-cursor {
-  cursor: url('../image/hammer.png'), auto; 
-}
-
-.hidden {
-  display: none;
+@media only screen and (max-width: 699px) {
+  .wrapper button {
+    background: rgb(46, 249, 0);
+    border-radius: 10px;
+    aspect-ratio: 2;
+    height: 100%;
+    top: 1%;
+    margin-top: 5px;
+  }
 }
