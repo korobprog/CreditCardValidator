@@ -60,7 +60,7 @@ input::placeholder {
 
 @media only screen and (min-width: 700px) {
   .wrapper button {
-    background: rgb(46, 249, 0);
+    background: rgb(39, 156, 13);
     border-radius: 10px;
     aspect-ratio: 2;
     height: 100%;
@@ -72,7 +72,7 @@ input::placeholder {
 
 @media only screen and (max-width: 699px) {
   .wrapper button {
-    background: rgb(46, 249, 0);
+    background: rgb(39, 156, 13);
     border-radius: 10px;
     aspect-ratio: 2;
     height: 100%;
