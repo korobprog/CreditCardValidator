@@ -1,7 +1,7 @@
 import './css/styles.css';
 import { CreditCardValidatorNumber } from "./js/CreditCardValidatorNumber"
-import { InputForm } from "./js/InputForm"
+import { InputFormLogic } from "./js/InputFormLogic"
 
-const input = InputForm()
-const inputCard = CreditCardValidatorNumber(input)
-console.log("🚀 ~ file: index.js:5 ~ inputCard:", inputCard)
+
+const input = InputFormLogic()
+const inputCard = CreditCardValidatorNumber()

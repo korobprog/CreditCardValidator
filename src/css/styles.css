@@ -6,9 +6,7 @@ h2 {
 body {
   background: #ffffff;
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   min-height: 100vh;
   padding: 1rem;
 }
@@ -27,12 +25,12 @@ input {
   font-size: 1.1rem;
   font-weight: 500;
   display: flex;
-  width:100%;
+  width: 100%;
   padding: 3px;
-  border:1px solid black;
+  border: 1px solid black;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 }
 
 input:focus {
@@ -43,8 +41,24 @@ input::placeholder {
   color: rgba(9, 0, 0, 0.6);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 /* Button on top of the Input */
 .wrapper {
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.wrappercard {
   width: 400px;
   max-width: 100%;
   position: relative;
@@ -79,4 +93,16 @@ input::placeholder {
     top: 1%;
     margin-top: 5px;
   }
+}
+.container  {
+   width: 90%; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  margin-top: 10px;
+  
+}
+
+.image {
+  height: 30px;
+  bottom: 20px;
 }

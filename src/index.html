@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-   <!-- web-браузер Internet Explorer будет более точно следовать спецификации документа -->
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <!-- web-браузер Internet Explorer будет более точно следовать спецификации документа -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-   <!-- Кодировка страницы -->
-   <meta charset="UTF-8">
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8" />
 
-   <!-- Для поддержки адаптивности -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- Для поддержки адаптивности -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
 
-   <title>AHJ-hw.-3-Events.-1-Game-with-goblins</title>
-</head>
-<body>
-     <div class="wrapper">
-      <form action="" id="add-form">
-         <input type="text" value="" placeholder="Enter your number card" />
-          <button onclick="onclick">
-            Click to Validate
-        </button>
-      </form>
-       
+    <title>AHJ-hw.-3-Events.-1-Game-with-goblins</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <div class="container" >
+          <form action="" id="add-form">
+            <input
+              type="tel"
+              pattern="[0-9]{14,19}"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+              value=""
+              placeholder="Enter your number card"
+            />
+            <button onclick="onclick">Click to Validate</button>
+          </form>
+        </div>
+      </section>
     </div>
-    <div class="card">
-      <div class="visa"></div>
-      <div class="mastercard"></div>
-      <div class="amex"></div>
-      <div class="discover"></div>
-      <div class="jsb"></div>
-      <div class="diners"></div>
-    </div>
-</body>
+  </body>
 </html>
