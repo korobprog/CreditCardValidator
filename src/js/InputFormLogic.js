@@ -23,27 +23,21 @@ section.classList.add('container');
 const body = document.querySelector('body');
 body.appendChild(section);
 
-
-
 export function InputFormLogic() {
    myForm.addEventListener('input', function (event) {
-      // true - алгоритм
-      //console.log(CreditCardValidatorNumber(event.target.value))
-      // карта пользователя
-      //console.log(event.target.value)
-
-      const cardNumber = data.find(function (item, index) {
-         console.log(`${item.title} ${item.imagecard}`)
+      const cardNumber = data.find(function (item) {
          // Сравнение по начальным цифрам
-         const resultnum = String(event.target.value).startsWith(item.startsWith);
-         // если все совпадает то должна аоявится ссылка на картинку карты
-         if (CreditCardValidatorNumber(event.target.value) && resultnum && event.target.value === item.length) {
-            return item.imagecard[index]
+  //const result = item.startsWith.some(num => { return String(event.target.value).substring(0, String(num).length) == String(num);
+  // через метод startsWith
+         const result = item.startsWith.some(num => {
+            return String(event.target.value).startsWith(num);
+         })
+         // если все совпадает то выводим объект
+         if (CreditCardValidatorNumber(event.target.value) && result) {
+            return item
          }
       });
-      console.log("🚀 ~ file: InputFormLogic.js:43 ~ cardNumber ~ cardNumber:", cardNumber)
-
-
+      console.log("🚀 ~ file: InputFormLogic.js:45 ~ cardNumber ~ cardNumber:", cardNumber)
 
       const image = `
    <image src=${visamono} class="image">
