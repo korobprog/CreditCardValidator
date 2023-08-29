@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goblin Game</title>
-</head>
-<body>
-  <h1>Goblin Game</h1>
-  <div id="scoreboard">
-    <span id="score">Score: 0</span>
-    <span id="missed">Missed: 0</span>
-  </div>
-  <div id="game-board">
-    <div id="game-board">
-      <div class="cell" id="cell-0"></div>
-      <div class="cell" id="cell-1"></div>
-      <div class="cell" id="cell-2"></div>
-      <div class="cell" id="cell-3"></div>
-      <div class="cell" id="cell-4"></div>
-      <div class="cell" id="cell-5"></div>
-      <div class="cell" id="cell-6"></div>
-      <div class="cell" id="cell-7"></div>
-      <div class="cell" id="cell-8"></div>
-      <div class="cell" id="cell-9"></div>
-      <div class="cell" id="cell-10"></div>
-      <div class="cell" id="cell-11"></div>
-      <div class="cell" id="cell-12"></div>
-      <div class="cell" id="cell-13"></div>
-      <div class="cell" id="cell-14"></div>
-      <div class="cell" id="cell-15"></div>
-    </div>    
-  </div>
-  <button id="start-button">Start</button>
-</body>
+<html lang="ru">
+  <head>
+    <!-- web-браузер Internet Explorer будет более точно следовать спецификации документа -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8" />
+
+    <!-- Для поддержки адаптивности -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <title>AHJ-hw.-3-Events.-1-Game-with-goblins</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <div class="container" >
+          <form action="" id="add-form">
+            <input
+              type="tel"
+              pattern="[0-9]{14,19}"
+              onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+              value=""
+              placeholder="Enter your number card"
+            />
+            <button onclick="onclick">Click to Validate</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
