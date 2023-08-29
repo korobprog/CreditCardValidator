@@ -45,11 +45,11 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      filename: './src/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: './src/css/[name].css',
-      chunkFilename: '[id].css',
+      chunkFilename: './css/[id].css',
 
     }),
   ],
