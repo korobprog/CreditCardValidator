@@ -30,17 +30,17 @@ function CreditCardValidatorNumber(input) {
   return total % 10 == 0;
 }
 ;// CONCATENATED MODULE: ./src/image/flat-rounded/visa.svg
-const visa_namespaceObject = __webpack_require__.p + "9ffefcfcfc1e469b0dd4.svg";
+const visa_namespaceObject = __webpack_require__.p + "7e2e09f9eef0599e0a57.svg";
 ;// CONCATENATED MODULE: ./src/image/flat-rounded/mastercard.svg
-const mastercard_namespaceObject = __webpack_require__.p + "8b1d63466bbf552f40cf.svg";
+const mastercard_namespaceObject = __webpack_require__.p + "af8851abdfa16592eff9.svg";
 ;// CONCATENATED MODULE: ./src/image/flat-rounded/amex.svg
-const amex_namespaceObject = __webpack_require__.p + "c3a15d7b0a0ab85bf1d3.svg";
+const amex_namespaceObject = __webpack_require__.p + "557acb7ed50c269cffde.svg";
 ;// CONCATENATED MODULE: ./src/image/flat-rounded/discover.svg
 const discover_namespaceObject = __webpack_require__.p + "42e5cc0429e5a73c9621.svg";
 ;// CONCATENATED MODULE: ./src/image/flat-rounded/jcb.svg
-const jcb_namespaceObject = __webpack_require__.p + "d3ae77e866e596ccf0d9.svg";
+const jcb_namespaceObject = __webpack_require__.p + "7440c0795ac7597be9d0.svg";
 ;// CONCATENATED MODULE: ./src/image/flat-rounded/diners.svg
-const diners_namespaceObject = __webpack_require__.p + "030cbb90d6b902db925b.svg";
+const diners_namespaceObject = __webpack_require__.p + "16ee6f0019446b804883.svg";
 ;// CONCATENATED MODULE: ./src/js/data.js
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -119,17 +119,17 @@ function InputFormLogic() {
   });
 }
 ;// CONCATENATED MODULE: ./src/image/mono/visa.svg
-const mono_visa_namespaceObject = __webpack_require__.p + "527ccaff47c30007d1b4.svg";
+const mono_visa_namespaceObject = __webpack_require__.p + "129221466789b2ece8e0.svg";
 ;// CONCATENATED MODULE: ./src/image/mono/mastercard.svg
-const mono_mastercard_namespaceObject = __webpack_require__.p + "d7a1ea2f394549fb173d.svg";
+const mono_mastercard_namespaceObject = __webpack_require__.p + "f883d5c24bad75547a55.svg";
 ;// CONCATENATED MODULE: ./src/image/mono/amex.svg
-const mono_amex_namespaceObject = __webpack_require__.p + "ef5877ec34b59f707c5e.svg";
+const mono_amex_namespaceObject = __webpack_require__.p + "ee7578aeb5d45ce64759.svg";
 ;// CONCATENATED MODULE: ./src/image/mono/discover.svg
-const mono_discover_namespaceObject = __webpack_require__.p + "aaff4e12a26a8e458fc5.svg";
+const mono_discover_namespaceObject = __webpack_require__.p + "3a3f7aebfabd6fc3550e.svg";
 ;// CONCATENATED MODULE: ./src/image/mono/jcb.svg
-const mono_jcb_namespaceObject = __webpack_require__.p + "ead72e7beff1781146be.svg";
+const mono_jcb_namespaceObject = __webpack_require__.p + "7e95a622d866ae17bf8e.svg";
 ;// CONCATENATED MODULE: ./src/image/mono/diners.svg
-const mono_diners_namespaceObject = __webpack_require__.p + "8866ff2435436459a733.svg";
+const mono_diners_namespaceObject = __webpack_require__.p + "42bbe60c7d2275efe01e.svg";
 ;// CONCATENATED MODULE: ./src/js/ImagesLogic.js
 
 
