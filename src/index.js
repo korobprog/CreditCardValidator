@@ -1,11 +1,33 @@
 import './css/styles.css';
-import { CreditCardValidatorNumber } from "./js/CreditCardValidatorNumber"
-import { InputFormLogic } from "./js/InputFormLogic"
-import { ImagesLogic } from './js/ImagesLogic';
+import { CreditCardValidatorNumber } from "./js/CreditCardValidatorNumber";
+import cardNumberFormats from "./js/data"
 
-const input = InputFormLogic()
-console.log("🚀 ~ file: index.js:7 ~ input:", input)
-const inputCard = CreditCardValidatorNumber()
-console.log("🚀 ~ file: index.js:9 ~ inputCard:", inputCard)
-const images = ImagesLogic()
-console.log("🚀 ~ file: index.js:11 ~ images:", images)
+const data = cardNumberFormats.cardNumberFormats
+const input = document.querySelector('input');
+const button = document.querySelector('button');
+
+input.addEventListener("change", (event) => {
+   const value = event.target.value
+
+   button.addEventListener('click', (event) => {
+      event.preventDefault
+      const cardNumber = data.find(function (item) {
+         const result = item.startsWith.some((num) => {
+            return value.startsWith(num);
+         });
+
+         if (CreditCardValidatorNumber(value) && result) {
+            return item;
+         }
+      });
+      console.log("🚀 ~ file: index.js:23 ~ cardNumber ~ cardNumber:", cardNumber)
+      console.log("🚀 ~ file: inputValidation.js:26 ~ cardNumber ~ cardNumber:", cardNumber)
+   });
+})
+
+
+
+
+
+
+

@@ -105,4 +105,5 @@ input[type='number'] {
 .image {
   height: 30px;
   bottom: 20px;
+  margin-bottom: 10px;
 }

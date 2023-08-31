@@ -43,7 +43,7 @@ const cardNumberFormats = [
       imagecard: discover,
    },
    {
-      title: 'jsb',
+      title: 'jcb',
       startsWith: [...Array.from(Array(61).keys(), (x) => x + 3528)],
       length: [16, 17, 18, 19],
       imagecard: jcb,
