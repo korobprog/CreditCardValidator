@@ -6,7 +6,7 @@ h2 {
 body {
   background: #ffffff;
   font-family: 'Poppins', sans-serif;
-
+ overflow: hidden;
   min-height: 100vh;
   padding: 1rem;
 }
@@ -56,6 +56,9 @@ input[type='number'] {
   width: 400px;
   max-width: 100%;
   position: relative;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .wrappercard {
@@ -77,13 +80,12 @@ input[type='number'] {
     background: rgb(39, 156, 13);
     border-radius: 10px;
     aspect-ratio: 2;
-    height: 100%;
+    height: 60%;
     position: absolute;
-    top: 1%;
+    top:45%;
     right: -120px;
   }
 }
-
 @media only screen and (max-width: 699px) {
   .wrapper button {
     background: rgb(39, 156, 13);
@@ -94,6 +96,7 @@ input[type='number'] {
     margin-top: 5px;
   }
 }
+
 .container  {
    width: 90%; 
   max-width: 1200px; 
@@ -106,4 +109,8 @@ input[type='number'] {
   height: 30px;
   bottom: 20px;
   margin-bottom: 10px;
+}
+
+.boximage {
+  display:  inline-block;
 }
