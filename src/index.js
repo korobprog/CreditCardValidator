@@ -10,10 +10,13 @@ import jcbMono from './image/mono/jcb.svg';
 import dinersMono from './image/mono/diners.svg';
 import mirMono from './image/mono/mir.svg';
 
+
+
 const data = cardNumberFormats.cardNumberFormats
-const input = document.querySelector('input');
+const input = document.querySelector('input')
 const button = document.querySelector('button');
 const image = document.querySelector('.image');
+
 
 image.innerHTML = `
    <image class="image" src="${amexMono}">
@@ -23,12 +26,39 @@ image.innerHTML = `
    <image class="image" src="${jcbMono}">
    <image class="image" src="${dinersMono}"> 
    <image class="image" src="${mirMono}"> 
-   
    `
-
-
 input.addEventListener("change", (event) => {
    const value = event.target.value
+
+   input.addEventListener('input', (event) => {
+      if (event.inputType === 'deleteContentBackward') {
+         return (
+            image.innerHTML = `
+   <image class="image" src="${amexMono}">
+   <image class="image" src="${visaMono}">
+   <image class="image" src="${mastercardMono}">
+   <image class="image" src="${discoverMono}">
+   <image class="image" src="${jcbMono}">
+   <image class="image" src="${dinersMono}"> 
+   <image class="image" src="${mirMono}"> 
+   `
+         )
+      }
+   });
+
+   if (value === '') {
+      return (
+         image.innerHTML = `
+   <image class="image" src="${amexMono}">
+   <image class="image" src="${visaMono}">
+   <image class="image" src="${mastercardMono}">
+   <image class="image" src="${discoverMono}">
+   <image class="image" src="${jcbMono}">
+   <image class="image" src="${dinersMono}"> 
+   <image class="image" src="${mirMono}"> 
+   `
+      )
+   }
    button.addEventListener('click', (event) => {
       event.preventDefault()
       const cardNumber = data.find(function (item) {
@@ -43,9 +73,8 @@ input.addEventListener("change", (event) => {
       console.log("🚀 ~ file: index.js:23 ~ cardNumber ~ cardNumber:", cardNumber)
       console.log("🚀 ~ file: inputValidation.js:26 ~ cardNumber ~ cardNumber:", cardNumber)
 
-      try {
-         if (cardNumber.title == 'amex') {
-            return (image.innerHTML = `
+      if (cardNumber.title == 'amex') {
+         return (image.innerHTML = `
    <image class="image" src="${cardNumber.imagecard}">
    <image class="image" src="${visaMono}">
    <image class="image" src="${mastercardMono}">
@@ -54,10 +83,10 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${dinersMono}">
    <image class="image" src="${mirMono}"> 
    `
-            )
-         }
-         if (cardNumber.title == 'visa') {
-            return (image.innerHTML = `
+         )
+      }
+      if (cardNumber.title == 'visa') {
+         return (image.innerHTML = `
    <image class="image" src="${amexMono}">
    <image class="image"src="${cardNumber.imagecard}">
    <image class="image" src="${mastercardMono}">
@@ -66,9 +95,9 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${dinersMono}">
    <image class="image" src="${mirMono}"> 
    `)
-         }
-         if (cardNumber.title == 'mastercard') {
-            return (image.innerHTML = `
+      }
+      if (cardNumber.title == 'mastercard') {
+         return (image.innerHTML = `
    <image class="image" src="${amexMono}">
    <image class="image"src="${visaMono}">
    <image class="image" src="${cardNumber.imagecard}">
@@ -77,9 +106,9 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${dinersMono}">
    <image class="image" src="${mirMono}"> 
    `)
-         }
-         if (cardNumber.title == 'discover') {
-            return (image.innerHTML = `
+      }
+      if (cardNumber.title == 'discover') {
+         return (image.innerHTML = `
    <image class="image" src="${amexMono}">
    <image class="image"src="${visaMono}">
    <image class="image" src="${mastercardMono}">
@@ -88,9 +117,9 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${dinersMono}">
    <image class="image" src="${mirMono}"> 
    `)
-         }
-         if (cardNumber.title == 'jcb') {
-            return (image.innerHTML = `
+      }
+      if (cardNumber.title == 'jcb') {
+         return (image.innerHTML = `
    <image class="image" src="${amexMono}">
    <image class="image"src="${visaMono}">
    <image class="image" src="${mastercardMono}">
@@ -99,9 +128,9 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${dinersMono}">
    <image class="image" src="${mirMono}"> 
    `)
-         }
-         if (cardNumber.title == 'diners') {
-            return (image.innerHTML = `
+      }
+      if (cardNumber.title == 'diners') {
+         return (image.innerHTML = `
    <image class="image" src="${amexMono}">
    <image class="image"src="${visaMono}">
    <image class="image" src="${mastercardMono}">
@@ -110,9 +139,9 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${cardNumber.imagecard}">
    <image class="image" src="${mirMono}"> 
    `)
-         }
-         if (cardNumber.title == 'mir') {
-            return (image.innerHTML = `
+      }
+      if (cardNumber.title == 'mir') {
+         return (image.innerHTML = `
    <image class="image" src="${amexMono}">
    <image class="image"src="${visaMono}">
    <image class="image" src="${mastercardMono}">
@@ -121,13 +150,9 @@ input.addEventListener("change", (event) => {
    <image class="image" src="${dinersMono}">
    <image class="image" src="${cardNumber.imagecard}"> 
    `)
-         }
-
-      } catch (info) {
-         alert("Нет совпадений")
       }
-   });
 
+   });
 })
 
 

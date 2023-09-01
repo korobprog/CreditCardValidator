@@ -25,13 +25,14 @@
         </div>
         
         <div class="container" >
-          <form action="" id="add-form"> 
+          <form action="" id="form"> 
             <input
               type="tel"
               pattern="[0-9]{14,19}"
               onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
               value=""
               placeholder="Enter your number card"
+              type="text" onfocus="if(this.value=='your initial text'){this.value=''}; return false;"
             />
             <button>Click to Validate</button>
           </form>

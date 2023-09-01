@@ -146,30 +146,26 @@ input.addEventListener("change", function (event) {
     });
     console.log("🚀 ~ file: index.js:23 ~ cardNumber ~ cardNumber:", cardNumber);
     console.log("🚀 ~ file: inputValidation.js:26 ~ cardNumber ~ cardNumber:", cardNumber);
-    try {
-      if (cardNumber.title == 'amex') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
-      }
-      if (cardNumber.title == 'visa') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
-      }
-      if (cardNumber.title == 'mastercard') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
-      }
-      if (cardNumber.title == 'discover') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
-      }
-      if (cardNumber.title == 'jcb') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
-      }
-      if (cardNumber.title == 'diners') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
-      }
-      if (cardNumber.title == 'mir') {
-        return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\"> \n   ");
-      }
-    } catch (info) {
-      alert("Нет совпадений");
+    if (cardNumber.title == 'amex') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
+    }
+    if (cardNumber.title == 'visa') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
+    }
+    if (cardNumber.title == 'mastercard') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
+    }
+    if (cardNumber.title == 'discover') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
+    }
+    if (cardNumber.title == 'jcb') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
+    }
+    if (cardNumber.title == 'diners') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\">\n   <image class=\"image\" src=\"").concat(mono_mir_namespaceObject, "\"> \n   ");
+    }
+    if (cardNumber.title == 'mir') {
+      return src_image.innerHTML = "\n   <image class=\"image\" src=\"".concat(mono_amex_namespaceObject, "\">\n   <image class=\"image\"src=\"").concat(mono_visa_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_mastercard_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_jcb_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_discover_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(mono_diners_namespaceObject, "\">\n   <image class=\"image\" src=\"").concat(cardNumber.imagecard, "\"> \n   ");
     }
   });
 });
